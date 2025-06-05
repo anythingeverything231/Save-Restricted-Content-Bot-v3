@@ -7,6 +7,16 @@ from shared_client import start_client
 import importlib
 import os
 import sys
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+API_ID = os.getenv("API_ID")
+API_HASH = os.getenv("API_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+MONGO_DB = os.getenv("MONGO_DB")
+OWNER_ID = list(map(int, os.getenv("OWNER_ID").split())) # list seperated via space
 
 async def load_and_run_plugins():
     await start_client()
