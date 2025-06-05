@@ -1,6 +1,7 @@
 telethon
 python-dotenv
 psutil
+asyncio
 opencv-python-headless
 devgagantools
 aiofiles
